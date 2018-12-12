@@ -8,7 +8,7 @@ triggers:
     runs:
       - name: sanity-nrf52
         container: zephyrprojectrtos/zephyr-build
-        host-tag: zephry-nrf52
+        host-tag: zephyr-nrf52
         privileged: true
         params:
           ZEPHYR_TOOLCHAIN_VARIANT: zephyr
