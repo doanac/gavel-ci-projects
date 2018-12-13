@@ -18,6 +18,19 @@ triggers:
         script-repo:
           name: gavel-ci-projects
           path: zephyr/sanity.sh
+      - name: sanity-k64f
+        container: zephyrprojectrtos/zephyr-build
+        host-tag: zephyr-k64f
+        privileged: true
+        params:
+          ZEPHYR_TOOLCHAIN_VARIANT: zephyr
+          PLATFORM: frdm_k64f
+          BROKE_TESTS: |
+            samples/basic
+            tests/kernel/interrupt
+        script-repo:
+          name: gavel-ci-projects
+          path: zephyr/sanity.sh
 
 script-repos:
   gavel-ci-projects:

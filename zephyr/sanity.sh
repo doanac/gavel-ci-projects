@@ -16,6 +16,8 @@ fi
 if [ -n "$PLATFORM" ] ; then
 	if [ "$PLATFORM" = "nrf52_blenano2" ] ; then
 		PYOCD_BOARD_NAME="RedBearLab-BLE-Nano2"
+	elif [ "$PLATFORM" = "frdm_k64f" ] ; then
+		PYOCD_BOARD_NAME="FRDM-K64F"
 	else
 		echo "ERROR: Unknown platform name for this script: $PLATFORM"
 		exit 1
