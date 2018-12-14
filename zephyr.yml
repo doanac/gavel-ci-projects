@@ -27,6 +27,8 @@ triggers:
           PLATFORM: frdm_k64f
           BROKE_TESTS: |
             samples/basic
+            samples/subsys/nvs
+            samples/subsys/usb/testusb/usb.loopback
             tests/kernel/interrupt
         script-repo:
           name: gavel-ci-projects
