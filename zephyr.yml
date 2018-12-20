@@ -28,7 +28,7 @@ triggers:
           BROKE_TESTS: |
             samples/basic
             samples/subsys/nvs
-            samples/subsys/usb/testusb/usb.loopback
+            samples/subsys/usb/testusb
             tests/kernel/interrupt
         script-repo:
           name: gavel-ci-projects
